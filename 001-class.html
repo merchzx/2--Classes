@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классы</title>
+</head>
+
+<body>
+    <script>
+        // Определение класса (class declaration)
+        // class Rect {
+        //     // конструктор - инициализирует экземпляр класса Rect, представляет обычную функцию- конструктор
+        //     constructor(width, height) {
+        //         this.width = width;     // свойство width
+        //         this.height = height;
+        //     }
+
+        //     // метод, будет добавлен в прототип Rect.prototype
+        //     getArea() {
+        //         return this.height * this.width;
+        //     }
+
+        //     getPerimeter() {
+        //         return this.height * 2 + this.width * 2;
+        //     }
+        // }
+
+        // let r1 = new Rect(10, 20);
+        // let r2 = new Rect(15, 9);
+
+        // console.log(r1.width);
+        // console.log("r1 area " + r1.getArea());
+        // console.log("r1 perimeter " + r1.getPerimeter());
+
+        // console.log("r2 area " + r2.getArea());
+        // console.log("r2 perimeter " + r2.getPerimeter());
+
+
+
+        class Triangle {
+            constructor(side1,side2,side3,height) {
+                this.side1 = side1
+                this.side2 = side2
+                this.side3 = side3
+                this.height = height
+            }
+
+            setSide1() {
+                this.side1 = parseInt(prompt("Input side1 ->"))
+            
+            }
+            setSide2() {
+                this.side2 = parseInt(prompt("Input side2 ->"))
+        
+            }
+            setSide3() {
+                this.side3 = parseInt(prompt("Input side3 ->"))
+
+            }
+            setHeight() {
+                this.height = parseInt(prompt("Input height ->"))
+            }
+            input() {
+                this.side1 = parseInt(prompt("Input first Side ->"))
+                this.side2 = parseInt(prompt("Input second Side ->"))
+                this.side3 = parseInt(prompt("Input third Side ->"))
+                this.height = parseInt(prompt("Input height ->"))
+            }
+
+            getV() {
+                return this.side1*this.height/2
+            }
+            getPer() {
+                return this.side1+this.side2+this.side3
+            }
+            show() {
+                console.log("Perimetr: "+triug1.getPer())
+                console.log("V: "+triug1.getV())
+            }
+        }
+        let triug1 = new Triangle()
+        triug1.input();
+        triug1.show();
+        triug1.setSide1();
+        triug1.setSide2();
+        triug1.setSide3();
+        triug1.setHeight();
+        triug1.show();
+    </script>
+</body>
+
+</html>
